@@ -1,0 +1,91 @@
+#nav-list {
+    grid-area: nav-list;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+body {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 50vh 50vh 50vh 50vh 50vh 10vh;
+    grid-template-areas: 
+        "header"
+        "about"
+        "team"
+        "projects"
+        "events"
+        "contact"
+        "footer"
+}
+
+header {
+    display: flex;
+    grid-area: header;
+    background-color:rgb(215, 55, 49);
+}
+
+#logo {
+    height: 20px;
+}
+
+#name-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: left;
+}
+
+#nav-list {
+    display: flex;
+    grid-area: header;
+    align-items: center;
+    justify-items: right;
+}
+
+#about-landing {
+    grid-area: about;
+}
+
+#action-img {
+    height: 25px;
+}
+
+#our-team {
+    display: flex;
+    flex-direction: row;
+    grid-area: team;
+    background-color: rgb(85, 158, 206);
+}
+
+#project-carousel {
+    grid-area: projects;
+}
+
+#calendar {
+    grid-area: events;
+    background-color: rgb(85, 158, 206);
+}
+
+#contact {
+    grid-area: contact;
+}
+
+#contact-form {
+    grid-area: contact;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#social-media-bar {
+    display: flex;
+    flex-direction: column;
+    grid-area: contact;
+}
+
+footer {
+    grid-area: footer;
+    background-color:rgb(215, 55, 49);
+}
